@@ -21,3 +21,6 @@ Oluşturduğunuz çipleri kullanarak RAM, CPU ve bilgisayarı yaratırsınız.
 
 ## Proje 6
 Oluşturduğunuz 16 bit bilgisayar için assembler yazarsınız.
+
+   "If you have a few spare hours, I'd love to share the details of how this device is a masterpiece of design. Quadruple independent gear boxes enabling zero to twenty in under four seconds, ten kilometers of internal wiring, eleven hundred expertly machined hand-assembled components, flawless control at over 300 meters... But all my team needs to know is, 'Does it do the job, or doesn't it?' And let me tell you right now - it does the job."
+    — Twitch 
