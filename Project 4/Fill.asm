@@ -12,18 +12,30 @@
 // the screen should remain fully clear as long as no key is pressed.
 (LOOP)
 	@SCREEN
-	D=A
+	D=A	// D <-- Address of SCREEN
 	@address
-	M=D
+	M=D 
 	
 	@KBD
 	D=M
 	
 	@WHITE
-	D;JEQ
+	D;JEQ	// If D == 0 then Jump to White
 	
 	@BLACK
-	0;JEQ
+	0;JEQ	// Jump Black
+	
+(WHITE)
+	@color
+	M=0
+	@FILL
+	0;JMP
+	
+(BLACK)
+	@color
+	M=-1
+	@FILL
+	0;JMP
 	
 (FILL)
 	@address
@@ -36,7 +48,7 @@
 	@color
 	D=M
 	@address
-	A=M
+	A=M  
 	M=D
 	
 	@address
@@ -45,13 +57,4 @@
 	@FILL
 	0;JMP
 	
-(WHITE)
-	@color
-	M=0
-	@FILL
-	0;JMP
-(BLACK)
-	@color
-	M=-1
-	@FILL
-	0;JMP
+
